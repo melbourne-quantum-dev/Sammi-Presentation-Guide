@@ -70,6 +70,43 @@
             font-weight: 400;
         }
 
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(30, 20, 50, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(147, 51, 234, 0.3);
+        }
+        
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(147, 51, 234, 0.3);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-caption {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #a78bfa;
+            font-style: italic;
+        }
+        
         .pix {
             display: inline-block;
             animation: flutter 3s ease-in-out infinite;
@@ -276,6 +313,20 @@
             <h1><span class="pix">🦋</span> Sammi's Magical Presentation Guide <span class="pix">🦋</span></h1>
             <p>From Idea to Delivery: Your Roadmap to Success</p>
             <p><em>For the Platinum 1 Support Main Who's About to Carry This Presentation <span class="sparkle">✨</span></em></p>
+        </div>
+
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/tZ_88cymyy4?start=0&end=12&autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" 
+                    title="Lulu's Magical Laugh"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="video-caption">
+                <span class="pix">🦋</span> A little magical motivation from your favorite support! <span class="pix">🦋</span>
+            </p>
         </div>
 
         <div class="phase">
